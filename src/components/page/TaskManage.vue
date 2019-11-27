@@ -150,10 +150,10 @@ export default {
     methods: {
         getData() {
 			request({
-                url: 'https://api2.bmob.cn/1/classes/task',
+                url: 'https://api2.bmob.cn/1/classes/task?order=-task_date',
                 method: 'get',
 				headers : {'X-Bmob-Application-Id':'3bea17a55823d07e2487d6db68a04ba0', 'X-Bmob-REST-API-Key':'c8069787cb4ff2c10d99dae927667233', 'Content-Type':'application/json'},
-                params: JSON.stringify(this.query)
+                data: JSON.stringify(this.query)
             }).then(res => {
                 this.tableData = res.results;
             });
