@@ -73,6 +73,11 @@ export default {
                     index: 'coursemanage',
                     title: '课件管理'
                 },
+				{
+                    icon: 'el-icon-lx-cascades',
+                    index: 'announcementmanage',
+                    title: '公告管理'
+                },
 				/*
                 {
                     icon: 'el-icon-lx-cascades',

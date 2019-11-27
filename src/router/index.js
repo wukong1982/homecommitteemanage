@@ -7,7 +7,7 @@ export default new Router({
     routes: [
         {
             path: '/',
-            redirect: '/dashboard'
+            redirect: '/taskmanage'
         },
         {
             path: '/',
@@ -33,6 +33,11 @@ export default new Router({
                     path: '/coursemanage',
                     component: () => import(/* webpackChunkName: "table" */ '../components/page/CourseManage.vue'),
                     meta: { title: '课件管理' }
+                },
+				{
+                    path: '/announcementmanage',
+                    component: () => import(/* webpackChunkName: "table" */ '../components/page/AnnouncementManage.vue'),
+                    meta: { title: '公告管理' }
                 },
                 {
                     path: '/table',
